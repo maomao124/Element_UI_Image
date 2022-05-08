@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：Element_UI_Image
+  File name(文件名): test6
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/5/8
+  Time(创建时间)： 13:24
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/element-ui.css">
+    <script src="js/vue.js"></script>
+    <script src="js/element-ui.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+    <div style="width: 500px; height:500px;border: 3px solid skyblue">
+        <el-image style="width: 500px; height:500px" src="photos1/2.jpg" fit="fill"></el-image>
+    </div>
+    <div style="width: 700px; height:300px;border: 3px solid skyblue">
+        <el-image style="width: 700px; height:300px;" src="photos1/3.jpg" fit="fill">
+          <div slot="error" class="image-slot">
+            <i class="el-icon-picture-outline"></i>
+          </div>
+        </el-image>
+    </div>
+
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {},
+        methods: {},
+        mounted()
+        {
+
+        }
+    })
+</script>
+</body>
+</html>
